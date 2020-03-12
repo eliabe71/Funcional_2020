@@ -11,4 +11,4 @@ auxUPPER xs xc xd s =
 upper xs = 
 	if length xs == 0
 		then []
-	else (auxUPPER ['a'..'z'] ['A'..'Z'] ['1'..'10'](head xs)):[]++ upper (tail xs)
+	else (auxUPPER ['a'..'z'] ['A'..'Z'] ['0'..'9'](head xs)):[]++ upper (tail xs)
